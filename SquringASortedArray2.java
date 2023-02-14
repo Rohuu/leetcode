@@ -1,9 +1,13 @@
+import java.util.Arrays;
+
 // Qus: https://leetcode.com/problems/squares-of-a-sorted-array/
 // using two pointers approach  //
 
 public class SquringASortedArray2 {
     public static void main(String[] args) {
-
+        int[] arr = { -2, -1, 0, 2, 3 };
+        int[] ans = sortedSquares(arr);
+        System.out.println(Arrays.toString(ans));
     }
 
     static int[] sortedSquares(int[] nums) {
