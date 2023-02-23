@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Qus: Given an array arr of unsorted numbers and a target sum, count all triplets in it such that 
 // arr[i] + arr[j] + arr[k] < target where i, j, and k are three different indices. 
 // Write a function to return the count of such triplets.
@@ -16,6 +18,7 @@ public class TwoSumSmallerThanTarget {
     }
 
     static int doublesWithSmallerSum(int i, int j, int[] arr, int target) {
+        Arrays.sort(arr);
         int count = 0;
         while (i < j) {
             int sum = arr[i] + arr[j];
