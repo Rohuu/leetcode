@@ -4,8 +4,10 @@ package bitwiseOperators;
 
 public class CountSetBitsInInteger {
     public static void main(String[] args) {
-        int ans=countBits(1);
-        System.out.println(ans);
+        int ans1=countBits(1);
+        int ans2=countBitsMethod2(1);
+        System.out.println(ans1);
+        System.out.println(ans2);
     }
 
     static int countBits(int num){
@@ -15,6 +17,15 @@ public class CountSetBitsInInteger {
                 count++;
             }
             num = num >> 1;
+        }
+        return count;
+    }
+
+    static int countBitsMethod2(int num){
+        int count=0;
+        while(num>0) {
+            count++;
+            num=num & (num-1);
         }
         return count;
     }
