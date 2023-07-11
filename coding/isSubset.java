@@ -3,7 +3,7 @@ package coding;
 public class isSubset {
     public static void main(String[] args) {
         int[] arr1={1,2,3,4,5};
-        int[] arr2={0};
+        int[] arr2={1,1};
         boolean ans=isSubset(arr1,arr2);
         System.out.println(ans);
     }
@@ -14,7 +14,7 @@ public class isSubset {
         }
         for (int i = 0; i < arr2.length; i++) {
             boolean found=false;
-            for (int j = 0; j < arr1.length; j++) {
+            for (int j = i; j < arr1.length; j++) {
                 if(arr2[i]==arr1[j]){
                     found=true;
                     break;
