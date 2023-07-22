@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 
 // Qus: Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
