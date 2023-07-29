@@ -115,3 +115,14 @@ for item in range(5, 12):
 # we can't modify tuple in python
 numbers = (1, 2, 3, 4, 5)
 print(numbers.count(3))     # returns the count of a value
+
+# dictionary
+# it is to store a key:value pair data structure in python same like hashmap in java
+cars={
+"brand":"ford",
+"model":"AX67RE",
+"year":1876
+}
+
+print(cars)
+print(len(cars))
